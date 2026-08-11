@@ -1,0 +1,215 @@
+.cartContainer {
+  max-width: 1100px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.pageHeader {
+  font-size: 1.8rem;
+  color: #2c3e50;
+  margin-bottom: 1.5rem;
+}
+
+.checkoutLayout {
+  display: grid;
+  grid-template-columns: 1fr 360px;
+  gap: 2rem;
+}
+
+.cartItem {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.itemImage {
+  width: 70px;
+  height: 95px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-right: 1.2rem;
+}
+
+.itemDetails {
+  flex: 1;
+}
+
+.itemTitle {
+  margin: 0 0 0.3rem 0;
+  font-size: 1.05rem;
+  color: #2c3e50;
+}
+
+.itemAuthor {
+  margin: 0 0 0.6rem 0;
+  font-size: 0.85rem;
+  color: #7f8c8d;
+}
+
+.itemMeta {
+  display: flex;
+  gap: 1.2rem;
+  font-size: 0.85rem;
+  color: #555;
+}
+
+.metaIcon {
+  color: #e74c3c;
+  margin-right: 0.3rem;
+}
+
+.durationSelect select {
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.itemPricing {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.priceTag {
+  text-align: right;
+}
+
+.priceLabel {
+  display: block;
+  font-size: 0.7rem;
+  color: #95a5a6;
+}
+
+.priceValue {
+  font-weight: 700;
+  color: #2c3e50;
+  font-size: 1.1rem;
+}
+
+.removeBtn {
+  background: none;
+  border: none;
+  color: #e74c3c;
+  cursor: pointer;
+  font-size: 1.1rem;
+}
+
+.summaryCard {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+}
+
+.summaryTitle {
+  margin-top: 0;
+  font-size: 1.2rem;
+  margin-bottom: 1.2rem;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 0.6rem;
+}
+
+.summaryRow {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.8rem;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.totalRow {
+  border-top: 1px dashed #ddd;
+  padding-top: 0.8rem;
+  font-size: 1.15rem;
+  color: #2c3e50;
+}
+
+.depositNote {
+  margin: 0.8rem 0 1.2rem 0;
+  color: #27ae60;
+  font-size: 0.8rem;
+}
+
+.checkoutBtn {
+  width: 100%;
+  background: #e74c3c;
+  color: #fff;
+  border: none;
+  padding: 0.8rem;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.sectionBlock {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.sectionTitle {
+  margin-top: 0;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  color: #2c3e50;
+}
+
+.formGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.fullWidth {
+  grid-column: span 2;
+}
+
+.inputGroup label {
+  display: block;
+  font-size: 0.85rem;
+  margin-bottom: 0.3rem;
+  color: #555;
+}
+
+.inputGroup input {
+  width: 100%;
+  padding: 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+}
+
+.paymentList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.paymentOption {
+  display: flex;
+  align-items: center;
+  padding: 0.8rem 1rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.activePayment {
+  border-color: #e74c3c;
+  background: #fff5f5;
+}
+
+.paymentIcon {
+  margin: 0 0.8rem;
+  color: #e74c3c;
+}

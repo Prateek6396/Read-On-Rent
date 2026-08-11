@@ -1,0 +1,130 @@
+.hero {
+  background: #eef0f5;
+  border-radius: 1.5rem;
+  padding: 3.5rem 3rem;
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 2rem;
+  align-items: center;
+  margin: 1.5rem auto 3rem;
+  max-width: 1280px;
+}
+
+.content h1 {
+  font-size: 2.75rem;
+  font-weight: 800;
+  color: #001632;
+  line-height: 1.15;
+  margin-bottom: 1.25rem;
+}
+
+.highlight {
+  color: #ff6b35;
+}
+
+.content p {
+  font-size: 1.05rem;
+  color: #55586a;
+  max-width: 480px;
+  margin-bottom: 2rem;
+}
+
+.ctaRow {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2.25rem;
+}
+
+.primaryBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: #001632;
+  color: #fff;
+  padding: 0.9rem 1.75rem;
+  border-radius: 2rem;
+  font-weight: 700;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.primaryBtn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 22, 50, 0.25);
+  color: #fff;
+}
+
+.outlineBtn {
+  display: inline-flex;
+  align-items: center;
+  background: transparent;
+  color: #001632;
+  border: 2px solid #001632;
+  padding: 0.9rem 1.75rem;
+  border-radius: 2rem;
+  font-weight: 700;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.outlineBtn:hover {
+  background: #001632;
+  color: #fff;
+}
+
+.features {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.feature {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-weight: 700;
+  color: #001632;
+}
+
+.feature svg {
+  color: #ff6b35;
+  font-size: 1.1rem;
+}
+
+.mediaWrap {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.mockup {
+  width: 100%;
+  max-width: 460px;
+  border-radius: 1rem;
+  box-shadow: 0 20px 45px rgba(0, 22, 50, 0.18);
+}
+
+@media (max-width: 900px) {
+  .hero {
+    grid-template-columns: 1fr;
+    padding: 2.5rem 1.5rem;
+    text-align: center;
+  }
+
+  .content p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .ctaRow,
+  .features {
+    justify-content: center;
+  }
+
+  .content h1 {
+    font-size: 2rem;
+  }
+}

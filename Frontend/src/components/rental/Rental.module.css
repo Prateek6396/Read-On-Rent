@@ -1,0 +1,176 @@
+.historyContainer {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.headerRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.filterTabs {
+  display: flex;
+  gap: 0.5rem;
+  background: #eee;
+  padding: 0.3rem;
+  border-radius: 6px;
+}
+
+.filterTabs button {
+  border: none;
+  background: transparent;
+  padding: 0.4rem 0.9rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.activeTab {
+  background: #fff !important;
+  color: #e74c3c;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.rentalsList {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.rentalCard {
+  background: #fff;
+  border-radius: 10px;
+  padding: 1.2rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  padding-bottom: 0.6rem;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.rentalId {
+  font-weight: 600;
+  color: #555;
+  font-size: 0.9rem;
+}
+
+.statusBadge {
+  padding: 0.2rem 0.6rem;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.statusActive { background: #e3f2fd; color: #1976d2; }
+.statusOverdue { background: #ffebee; color: #c62828; }
+.statusReturned { background: #e8f5e9; color: #2e7d32; }
+.statusPending { background: #fff3e0; color: #ef6c00; }
+
+.cardBody {
+  display: flex;
+  gap: 1.2rem;
+}
+
+.bookImage {
+  width: 75px;
+  height: 105px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.rentalDetails { flex: 1; }
+
+.bookTitle { margin: 0 0 0.3rem 0; font-size: 1.1rem; }
+.bookAuthor { color: #7f8c8d; font-size: 0.88rem; margin: 0 0 0.8rem 0; }
+
+.metaGrid {
+  display: flex;
+  gap: 1.5rem;
+  font-size: 0.85rem;
+  color: #444;
+}
+
+.icon { color: #e74c3c; margin-right: 0.3rem; }
+
+.cardFooter {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.8rem;
+  margin-top: 1rem;
+  padding-top: 0.8rem;
+  border-top: 1px dashed #eee;
+}
+
+.primaryBtn, .secondaryBtn {
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.88rem;
+  font-weight: 500;
+}
+
+.primaryBtn { background: #e74c3c; color: #fff; }
+.secondaryBtn { background: #f0f0f0; color: #333; }
+
+.modalOverlay {
+  position: fixed;
+  top: 0; left: 0; width: 100vw; height: 100vh;
+  background: rgba(0,0,0,0.5);
+  display: flex; align-items: center; justify-content: center;
+  z-index: 1000;
+}
+
+.modalContent {
+  background: #fff;
+  width: 90%; max-width: 500px;
+  padding: 1.5rem; border-radius: 10px;
+}
+
+.modalHeader {
+  display: flex; justify-content: space-between; align-items: center;
+  margin-bottom: 1.2rem;
+}
+
+.closeBtn { background: none; border: none; font-size: 1.5rem; cursor: pointer; }
+
+.trackingTimeline {
+  display: flex; justify-content: space-between;
+  margin: 1.5rem 0; position: relative;
+}
+
+.timelineItem { text-align: center; opacity: 0.4; flex: 1; }
+.completedStep { opacity: 1; color: #27ae60; }
+.currentStep { font-weight: bold; }
+
+.iconCircle {
+  width: 36px; height: 36px; border-radius: 50%;
+  background: #eee; margin: 0 auto 0.4rem auto;
+  display: flex; align-items: center; justify-content: center;
+}
+
+.completedStep .iconCircle { background: #e8f5e9; }
+
+.formGroup { margin-bottom: 1rem; }
+.formGroup label { display: block; font-size: 0.85rem; margin-bottom: 0.3rem; }
+.formGroup input, .formGroup select, .formGroup textarea {
+  width: 100%; padding: 0.6rem; border: 1px solid #ccc; border-radius: 6px;
+}
+
+.depositAlert {
+  background: #e8f5e9; color: #2e7d32;
+  padding: 0.8rem; border-radius: 6px; font-size: 0.85rem; margin-bottom: 1.2rem;
+}
+
+.modalActions { display: flex; justify-content: flex-end; gap: 0.8rem; }

@@ -1,0 +1,259 @@
+.headerWrap {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: #fff;
+}
+
+.topBar {
+  background: #f4f5f7;
+  border-bottom: 1px solid #e9e9ee;
+  font-size: 0.8rem;
+  color: #55586a;
+}
+
+.topBarInner {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0.45rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.topBarItem {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.topBarRight {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.mainNav {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 1rem 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  text-decoration: none;
+  flex-shrink: 0;
+}
+
+.logoIcon {
+  width: 40px;
+  height: 40px;
+  background: #ff6b35;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 1.2rem;
+}
+
+.logoText {
+  display: flex;
+  flex-direction: column;
+  font-weight: 800;
+  color: #001632;
+  font-size: 1.3rem;
+  line-height: 1;
+}
+
+.logoText small {
+  font-size: 0.6rem;
+  font-weight: 700;
+  color: #8a8d99;
+  letter-spacing: 0.08em;
+}
+
+.navLinks {
+  display: flex;
+  gap: 1.75rem;
+  flex: 1;
+}
+
+.navLinks a {
+  color: #33364a;
+  font-weight: 600;
+  text-decoration: none;
+  padding-bottom: 0.35rem;
+  border-bottom: 2px solid transparent;
+}
+
+.navLinks a:hover {
+  color: #001632;
+  border-bottom-color: #001632;
+}
+
+.rightIcons {
+  display: flex;
+  align-items: center;
+  gap: 1.1rem;
+}
+
+.searchForm {
+  display: flex;
+  align-items: center;
+  background: #f4f5f7;
+  border-radius: 2rem;
+  padding: 0.4rem 0.9rem;
+}
+
+.searchForm input {
+  border: none;
+  background: transparent;
+  outline: none;
+  padding: 0.2rem 0.5rem;
+  width: 140px;
+  font-size: 0.9rem;
+}
+
+.searchForm button {
+  border: none;
+  background: transparent;
+  color: #55586a;
+  cursor: pointer;
+  display: flex;
+}
+
+.iconBtn {
+  position: relative;
+  color: #001632;
+  font-size: 1.15rem;
+  display: flex;
+}
+
+.badge {
+  position: absolute;
+  top: -8px;
+  right: -10px;
+  background: #ff6b35;
+  color: #fff;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  font-size: 0.65rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.authButtons {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.loginBtn {
+  color: #001632;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 0.6rem 1.1rem;
+  border: 1.5px solid #001632;
+  border-radius: 2rem;
+}
+
+.signupBtn {
+  background: #001632;
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 0.6rem 1.3rem;
+  border-radius: 2rem;
+}
+
+.signupBtn:hover {
+  background: #142b4a;
+  color: #fff;
+}
+
+.profileDropdown {
+  position: relative;
+}
+
+.profileBtn {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: #f4f5f7;
+  border: none;
+  padding: 0.55rem 1rem;
+  border-radius: 2rem;
+  cursor: pointer;
+  font-weight: 700;
+  color: #001632;
+}
+
+.dropdown {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background: #fff;
+  border-radius: 0.6rem;
+  min-width: 190px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  display: none;
+  flex-direction: column;
+  margin-top: 0.5rem;
+  z-index: 1000;
+  overflow: hidden;
+}
+
+.profileDropdown:hover .dropdown {
+  display: flex;
+}
+
+.dropdown a {
+  color: #001632;
+  padding: 0.85rem 1rem;
+  border-bottom: 1px solid #f0f0f0;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.dropdown a:hover {
+  background: #f5f5f5;
+}
+
+.logoutBtn {
+  width: 100%;
+  text-align: left;
+  background: transparent;
+  border: none;
+  padding: 0.85rem 1rem;
+  color: #ba1a1a;
+  cursor: pointer;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.logoutBtn:hover {
+  background: #ffebee;
+}
+
+@media (max-width: 992px) {
+  .navLinks { display: none; }
+  .searchForm input { width: 90px; }
+  .topBarRight { gap: 0.75rem; }
+}
+
+@media (max-width: 640px) {
+  .mainNav { flex-wrap: wrap; gap: 1rem; }
+  .searchForm { order: 3; width: 100%; }
+  .topBarInner { flex-direction: column; gap: 0.35rem; align-items: flex-start; }
+}

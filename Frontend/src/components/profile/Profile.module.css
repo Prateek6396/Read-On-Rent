@@ -1,0 +1,108 @@
+.profileContainer {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.avatarCard {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.avatarCircle {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: #e74c3c;
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 0.8rem auto;
+}
+
+.memberBadge {
+  display: inline-block;
+  background: #fff5f5;
+  color: #e74c3c;
+  padding: 0.2rem 0.6rem;
+  border-radius: 10px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  margin-top: 0.5rem;
+}
+
+.profileNav {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.profileNav button {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.8rem 1rem;
+  border: none;
+  background: #fff;
+  border-radius: 8px;
+  cursor: pointer;
+  color: #555;
+  font-weight: 500;
+}
+
+.activeTab {
+  background: #e74c3c !important;
+  color: #fff !important;
+}
+
+.formCard {
+  background: #fff;
+  padding: 1.8rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.gridForm {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.2rem;
+}
+
+.stackedForm {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.fullWidth { grid-column: span 2; }
+
+.formGroup label { display: block; font-size: 0.85rem; margin-bottom: 0.4rem; }
+.formGroup input {
+  width: 100%;
+  padding: 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.submitBtn {
+  background: #e74c3c;
+  color: #fff;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.successAlert { background: #e8f5e9; color: #2e7d32; padding: 0.8rem; border-radius: 6px; margin-bottom: 1rem; }
+.errorAlert { background: #ffebee; color: #c62828; padding: 0.8rem; border-radius: 6px; margin-bottom: 1rem; }

@@ -1,0 +1,24 @@
+.errorContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem;
+  gap: 1rem;
+  text-align: center;
+  background: #ffebee;
+  border-radius: 1rem;
+}
+
+.errorIcon {
+  font-size: 3rem;
+}
+
+.errorContainer h3 {
+  color: #ba1a1a;
+}
+
+.errorContainer p {
+  color: #c62828;
+  max-width: 400px;
+}

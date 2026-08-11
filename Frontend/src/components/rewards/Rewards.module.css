@@ -1,0 +1,86 @@
+.rewardsContainer {
+  max-width: 950px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.heroBanner {
+  background: linear-gradient(135deg, #2c3e50, #3498db);
+  color: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.pointsDisplay {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.goldCoin {
+  font-size: 2.5rem;
+  color: #f1c40f;
+}
+
+.pointVal {
+  display: block;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.rewardsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+.rewardCard {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  display: flex;
+  flex-direction: column;
+}
+
+.disabledCard { opacity: 0.6; }
+
+.badgeIcon {
+  color: #e74c3c;
+  font-size: 1.5rem;
+  margin-bottom: 0.8rem;
+}
+
+.rewardTitle { margin: 0 0 0.4rem 0; font-size: 1.1rem; }
+.rewardDesc { font-size: 0.85rem; color: #666; margin-bottom: 1.2rem; }
+
+.pointsCost {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-weight: bold;
+  color: #2c3e50;
+  margin-bottom: 1rem;
+}
+
+.coinIcon { color: #f1c40f; }
+
+.redeemBtn {
+  margin-top: auto;
+  background: #27ae60;
+  color: #fff;
+  border: none;
+  padding: 0.6rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.redeemBtn:disabled {
+  background: #bdc3c7;
+  cursor: not-allowed;
+}

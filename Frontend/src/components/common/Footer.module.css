@@ -1,0 +1,110 @@
+.footer {
+  background: #001632;
+  color: #fff;
+  padding: 3.5rem 1.5rem 0;
+  margin-top: 4rem;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.6fr 1fr 1fr 1.3fr;
+  gap: 2rem;
+  padding-bottom: 2.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.brandRow {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 1rem;
+}
+
+.logoIcon {
+  width: 32px;
+  height: 32px;
+  background: #ff6b35;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+}
+
+.brandRow h3 {
+  margin: 0;
+  color: #fff;
+}
+
+.brandCol p {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 0.9rem;
+  max-width: 280px;
+}
+
+.column h4 {
+  margin-bottom: 1.1rem;
+  color: #fff;
+}
+
+.column a {
+  display: block;
+  color: rgba(255, 255, 255, 0.75);
+  padding: 0.4rem 0;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.3s;
+}
+
+.column a:hover {
+  color: #ff6b35;
+}
+
+.subscribeForm {
+  display: flex;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.subscribeForm input {
+  flex: 1;
+  border: none;
+  padding: 0.65rem 0.85rem;
+  font-size: 0.85rem;
+}
+
+.subscribeForm button {
+  background: #ff6b35;
+  color: #fff;
+  border: none;
+  padding: 0.65rem 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.subscribeForm button:hover {
+  background: #e85a28;
+}
+
+.bottom {
+  max-width: 1280px;
+  margin: 0 auto;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.85rem;
+  padding: 1.5rem 0;
+}
+
+@media (max-width: 900px) {
+  .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 520px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+}
