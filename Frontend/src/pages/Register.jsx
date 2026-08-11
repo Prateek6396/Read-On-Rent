@@ -40,14 +40,12 @@ export default function RegisterPage() {
     setIsLoading(true);
 
     try {
-      // API call context hook ke throw handle kiya
-      const result = await register(name, email, password, phone);
-      
-      if (result && result.success) {
+      const success = await register(name, email, password, phone);
+
+      if (success) {
         navigate('/');
       } else {
-        // Backend ka exact field-wise validation error message yahan use hoga
-        setError(result?.message || 'Registration failed. Please check details.');
+        setError('Registration failed. Please check details.');
       }
     } catch (err) {
       setError(err.message || 'An unexpected registration error occurred');
